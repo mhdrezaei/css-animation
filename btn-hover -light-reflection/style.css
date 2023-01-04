@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 3px solid #262626;
+  padding: 40px 80px;
+  position: relative;
+  /* overflow: hidden; */
+  transition: all 1s ease-in-out;
+}
+
+a::before {
+  content: "";
+  text-align: center;
+  align-content: center;
+  background-color: #fff;
+  width: 30px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform-origin: left bottom;
+  transform: translate(-550%, -100%) rotate(135deg);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover::before {
+  transform: translate(500%, -155%) rotate(135deg);
+}
+
+a:hover {
+  color: #fff;
+  background-color: orangered;
+}
