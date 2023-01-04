@@ -13,7 +13,7 @@ a {
   border: 3px solid #262626;
   padding: 40px 80px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   transition: all 1s ease-in-out;
 }
 
@@ -22,14 +22,14 @@ a::before {
   text-align: center;
   align-content: center;
   background-color: #fff;
-  width: 30px;
-  height: 500px;
+  width: 100%;
+  height: 50px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
-  transform-origin: left bottom;
-  transform: translate(-550%, -100%) rotate(135deg);
+  /* transform-origin: left bottom; */
+  transform: translateX(-100%) rotate(45deg);
   transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@ a::before {
 }
 
 a:hover::before {
-  transform: translate(500%, -155%) rotate(135deg);
+  transform: translateX(100%) rotate(45deg);
 }
 
 a:hover {
