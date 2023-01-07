@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8c8c8c;
+}
+
+a {
+  font-family: "roboto";
+  text-decoration: none;
+  color: transparent;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #eef609;
+  background-color: transparent;
+  padding: 40px 80px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 300;
+  /* overflow: hidden; */
+  transition: all 0.5s;
+}
+a::before {
+  content: "button";
+  font-family: "roboto";
+  text-decoration: none;
+  color: #eef609;
+  font-size: 40px;
+  border: 3px solid #eef609;
+  background-color: #000;
+  padding: 40px 80px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 300;
+  transition: all 0.5s;
+}
+a:hover::before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+}
+
+a::after {
+  content: "button";
+  font-family: "roboto";
+  text-decoration: none;
+  color: #eef609;
+  font-size: 40px;
+  border: 3px solid #eef609;
+  background-color: #000;
+  padding: 40px 80px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  font-weight: 300;
+  transform: scale(0);
+  transition: all 0.7s;
+}
+
+a:hover::after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+}
