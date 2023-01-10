@@ -57,7 +57,7 @@ a::after {
   left: -100%;
   font-weight: 300;
   transform: scale(0);
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 a:hover::after {
